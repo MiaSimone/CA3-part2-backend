@@ -4,11 +4,11 @@
 
     <groupId>dat.sem3</groupId>
     <!-- Change artifactID below to change what it will say in the URL. For example www.mydomain.com/devops-starter/api/demo -->
-    <artifactId>devops-starter</artifactId>
+    <artifactId>ca3-MiaProject</artifactId>
     <version>1.0.1</version>
     <packaging>war</packaging>
 
-    <name>ca3-startcode</name>
+    <name>ca3-MiaProject</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -17,7 +17,7 @@
         <!-- TODO: Add the URL to your own tomcat server. Used to deploy your WAR-file -->
         <!-- IMPORTANT-1: If your server uses https (via NGINX) use your DOMAIN NAME and https below: -->
         <!-- IMPORTANT-2: Observe we are NOT using /manager/html but /manager/text for script uploads --> 
-        <remote.server>https://mastwo.codes/manager/text</remote.server>
+        <remote.server>https://miadefries.com/manager/text</remote.server>
         
     </properties>
     
