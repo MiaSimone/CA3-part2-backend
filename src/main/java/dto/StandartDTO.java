@@ -1,6 +1,10 @@
 
 package dto;
 
+import entities.Characters;
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author miade
@@ -9,35 +13,18 @@ public class StandartDTO {
     
     private String time;
     
-    private String id;
-    private String text;
-    private String createdAt;
-    private String quote;
+    private List<CharacterDTO> characterDTOList = new ArrayList();
 
-    public StandartDTO(CatFactDTO factDTO, String time) {
+    public StandartDTO(List<CharacterDTO> cList, String time) {
         this.time = time;
-        this.id = factDTO.getId();
-        this.text = factDTO.getText();
-        this.createdAt = factDTO.getCreatedAt();
-    }
-
-    public StandartDTO(KanyeRestDTO kanyeDTO, String time) {
-        this.time = time;
-        this.quote = kanyeDTO.getQuote();
+        
+        this.characterDTOList = cList;
         
     }
 
     public StandartDTO() {
     }
     
-    public String getQuote() {
-        return quote;
-    }
-
-    public void setQuote(String quote) {
-        this.quote = quote;
-    }
-
     public String getTime() {
         return time;
     }
@@ -46,33 +33,15 @@ public class StandartDTO {
         this.time = time;
     }
 
-    public String getId() {
-        return id;
+
+    public List<CharacterDTO> getCharacterDTOList() {
+        return characterDTOList;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setCharacterDTOList(List<CharacterDTO> characterDTOList) {
+        this.characterDTOList = characterDTOList;
     }
 
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
-    }
-    
-    
-    
-    
-    
+   
     
 }
